@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/31/createBlog/">ʹ��hexo+github�������ĸ��˲���</a>
+      <a class="article-title" href="/2017/05/31/createBlog/">使用hexo+github创建你的个人博客</a>
     </h1>
   
 
@@ -83,12 +83,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.׼������<br>�ڿ�ʼ����ĸ��˲���֮ǰ���������У�<br>��1��һ�����Լ���github�˺�<br>��2�����ĵ����Ѿ���װ��node.js<br>��3�����ĵ����Ѿ���װ��git���Կͻ���<br>2.�����ֿ�<br>�½�һ���������û���.github.io���Ĳֿ⣬����˵����������github�û�����filna����ô�����½�һ��filna.github.io�Ĳֿ⣬��ס�������������û������Ժ��㲩�͵ķ��ʵ�ַ����<a href="https://filna.github.io����" target="_blank" rel="external">https://filna.github.io����</a><br>3.����SSH key<br>�������Ե�cmd������<br>$ cd ~/. ssh<br>������ʾ��No such file or directory����ô˵�����ǵ�һ��ʹ��git<br>Ȼ�������س�3�Σ����ջ�����һ���ļ����û�Ŀ¼�£������û�Ŀ¼���ҵ� .ssh\id_rsa.pub�ļ������±��򿪲��������������ݣ���������github��ҳ�������������ã��ҵ�SSH and GPG keys,Ȼ������New SSH key,���ո��Ƶ�����ճ����key���title��������档<br>��������������cmd������ $ ssh -T git@github.com,������ʾ”Are you sure you want to continue connecting (yes/no)?,����yes ,Ȼ���ῴ�� Hifilna!You’ve successfully authenticated,but GitHub does not provide shell access.����������˵������SSH�Ѿ����óɹ���<br>3.ʹ��hexoд����<br>��1����װ<br>������cmd������$ npm install -g hexo<br>��2����ʼ��<br>�����ĵ��Ե�ĳ���ط��½�һ���ļ��У������ҵ���d:\hexo,������cmd���л�����Ŀ¼�£�Ȼ������<br>$ hexo init<br>���ţ�����$ hexo g�������Ĳ���<br>������$ hexo s������������<br>���������Դ�������������<a href="http://localhost:4000���Ϳ��Կ���������վ�ˡ�" target="_blank" rel="external">http://localhost:4000���Ϳ��Կ���������վ�ˡ�</a><br>����Ҫ�޸����⣬���Ե�hexo�Ĺٷ���������<a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a><br>4.�ϴ���github<br>��1����������hexo�ļ��У��޸��ļ����µ�_config.yml�ļ����й�deploy�Ĳ��֣�<br>deploy:<br>  type: git<br>  repository: git@github.com:filna/filna.github.io.git<br>  branch: master<br>��2����װһ��������<br>npm install hexo-deployer-git –save<br>��3��������hexo�ļ������Ҽ�����������git bash������hexo d�����θĶ������д���ȫ���Ͻ�����ʱ�����Ϳ�������ҳ��������΢��:<a href="https://filna.github.io" target="_blank" rel="external">https://filna.github.io</a><br>5.д΢��<br>��1��������git bash������hexo new “��΢��������”����ʱ���Ϳ���������hexo-&gt;source-&gt;_posts�ļ������ҵ����½���.md�ļ�<br>��2��������git bash������hexo g��������hexo d��ˢ��΢�������Ϳ��Կ������ˡ�</p>
+        <p>1.准备工作<br>在开始搭建你的个人博客之前，你必须有：<br>（1）一个你自己的github账号<br>（2）你的电脑已经安装了node.js<br>（3）你的电脑已经安装了git电脑客户端<br>2.创建仓库<br>新建一个“你的用户名.github.io”的仓库，比如说，如果你的github用户名是filna，那么你就新建一个filna.github.io的仓库，记住，必须用你的用户名（以后你博客的访问地址就是<a href="https://filna.github.io）。" target="_blank" rel="external">https://filna.github.io）。</a><br>3.配置SSH key<br>在你电脑的cmd中输入<br>$ cd ~/. ssh<br>如果提示：No such file or directory，那么说明你是第一次使用git<br>然后连续回车3次，最终会生成一个文件在用户目录下，打开用户目录，找到 .ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置，找到SSH and GPG keys,然后点击New SSH key,将刚复制的内容粘贴到key哪里，title随便填，保存。<br>接下来，在你的cmd中输入 $ ssh -T git@github.com,如果提示”Are you sure you want to continue connecting (yes/no)?,输入yes ,然后会看到 Hifilna!You’ve successfully authenticated,but GitHub does not provide shell access.看到这个，说明你的SSH已经配置成功。<br>3.使用hexo写博客<br>（1）安装<br>在你的cmd中输入$ npm install -g hexo<br>（2）初始化<br>在你的电脑的某个地方新建一个文件夹，例如我的是d:\hexo,在你的cmd中切换到该目录下，然后输入<br>$ hexo init<br>接着，输入$ hexo g生成你的博客<br>再输入$ hexo s启动服务器，<br>现在你可以打开浏览器访问<a href="http://localhost:4000，就可以看到你的网站了。" target="_blank" rel="external">http://localhost:4000，就可以看到你的网站了。</a><br>若你要修改主题，可以到hexo的官方主题下载<a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a><br>4.上传到github<br>（1）打开你的hexo文件夹，修改文件夹下的_config.yml文件中有关deploy的部分：<br>deploy:<br>  type: git<br>  repository: git@github.com:filna/filna.github.io.git<br>  branch: master<br>（2）安装一个插件：<br>npm install hexo-deployer-git –save<br>（3）在你的hexo文件夹中右键，打开你的git bash，输入hexo d将本次改动的所有代码全部上交。此时，你就可以在网页访问你的微博:<a href="https://filna.github.io" target="_blank" rel="external">https://filna.github.io</a><br>5.写微博<br>（1）在你的git bash中输入hexo new “新微博的名字”，此时你就可以在你的hexo-&gt;source-&gt;_posts文件夹下找到你新建的.md文件<br>（2）在你的git bash中输入hexo g，再输入hexo d，刷新微博，你就可以看到它了。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/31/createBlog/" data-id="cj3cu45om0000o8fn10mc2okg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/31/createBlog/" data-id="cj3cubfb90000zkfnn966qg9k" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -133,7 +133,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/30/hello-world/" data-id="cj3cu45pv0001o8fn4xwj9yuh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/30/hello-world/" data-id="cj3cubfd70001zkfn5i9137yr" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -168,12 +168,12 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/05/31/createBlog/">ʹ��hexo+github�������ĸ��˲���</a>
+            <a href="/2017/05/31/createBlog/">使用hexo+github创建你的个人博客</a>
           </li>
         
           <li>
@@ -193,7 +193,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 filna<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
