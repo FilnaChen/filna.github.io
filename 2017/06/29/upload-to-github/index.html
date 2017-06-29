@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Git 本地仓库与Github远程仓库关联 | My Blog</title>
+  <title>上传代码到github | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SSH Key的配置：（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：$ssh-keygen -t rsa -C “注册邮箱”然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容$start ~/.ssh/id_rsa.pub">
+  <meta name="description" content="（1）cd到你的本地根目录下（或者在你的文件夹中右键打开Git bash），执行     git init（2）将项目的所有文件添加到仓库中     git add .     如果想添加某个特定的文件，只需把.换成特定的文件名即可（3）将add的文件commit到仓库     git commit -m “注释语句”（4）去github上创建自己的Resposity，获取创建仓库的https地址">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git 本地仓库与Github远程仓库关联">
-<meta property="og:url" content="http://yoursite.com/2017/06/29/git-connected-with-github/index.html">
+<meta property="og:title" content="上传代码到github">
+<meta property="og:url" content="http://yoursite.com/2017/06/29/upload-to-github/index.html">
 <meta property="og:site_name" content="My Blog">
-<meta property="og:description" content="SSH Key的配置：（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：$ssh-keygen -t rsa -C “注册邮箱”然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容$start ~/.ssh/id_rsa.pub">
-<meta property="og:updated_time" content="2017-06-29T01:24:14.929Z">
+<meta property="og:description" content="（1）cd到你的本地根目录下（或者在你的文件夹中右键打开Git bash），执行     git init（2）将项目的所有文件添加到仓库中     git add .     如果想添加某个特定的文件，只需把.换成特定的文件名即可（3）将add的文件commit到仓库     git commit -m “注释语句”（4）去github上创建自己的Resposity，获取创建仓库的https地址">
+<meta property="og:updated_time" content="2017-06-29T02:23:14.830Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git 本地仓库与Github远程仓库关联">
-<meta name="twitter:description" content="SSH Key的配置：（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：$ssh-keygen -t rsa -C “注册邮箱”然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容$start ~/.ssh/id_rsa.pub">
+<meta name="twitter:title" content="上传代码到github">
+<meta name="twitter:description" content="（1）cd到你的本地根目录下（或者在你的文件夹中右键打开Git bash），执行     git init（2）将项目的所有文件添加到仓库中     git add .     如果想添加某个特定的文件，只需把.换成特定的文件名即可（3）将add的文件commit到仓库     git commit -m “注释语句”（4）去github上创建自己的Resposity，获取创建仓库的https地址">
   
     <link rel="alternate" href="/atom.xml" title="My Blog" type="application/atom+xml">
   
@@ -63,10 +63,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-git-connected-with-github" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-upload-to-github" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/06/29/git-connected-with-github/" class="article-date">
-  <time datetime="2017-06-29T01:21:42.000Z" itemprop="datePublished">2017-06-29</time>
+    <a href="/2017/06/29/upload-to-github/" class="article-date">
+  <time datetime="2017-06-29T01:51:31.000Z" itemprop="datePublished">2017-06-29</time>
 </a>
     
   </div>
@@ -77,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Git 本地仓库与Github远程仓库关联
+      上传代码到github
     </h1>
   
 
@@ -85,12 +85,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>SSH Key的配置：<br>（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：<br>$ssh-keygen -t rsa -C “注册邮箱”<br>然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥<br>（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容<br>$start ~/.ssh/id_rsa.pub<br>（3）登录github，打开“SSH Keys”页面，快捷地址：<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a><br>填入key<br>（4）测试ssh key是否成功，使用命令“ssh -T git@github.com”，如果出现“You ‘ve successfully authonticated,bu Github does not provide shell access”，这就表示已经连接上Github</p>
+        <p>（1）cd到你的本地根目录下（或者在你的文件夹中右键打开Git bash），执行<br>     git init<br>（2）将项目的所有文件添加到仓库中<br>     git add .<br>     如果想添加某个特定的文件，只需把.换成特定的文件名即可<br>（3）将add的文件commit到仓库<br>     git commit -m “注释语句”<br>（4）去github上创建自己的Resposity，获取创建仓库的https地址<br>（5）将本地的仓库关联到github上<br>     git remote add origin <a href="https://github.com/filna/test.git7）" target="_blank" rel="external">https://github.com/filna/test.git7）</a><br>     后面的https链接地址换成你自己的仓库url地址<br>（6）上传github之前，要先pull一下，执行如下命令：<br>     git pull origin master –allow-unrelated-histories<br>（7）代码合并<br>     git pull –rebase origin master<br>（8）git push -u origin master</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/29/git-connected-with-github/" data-id="cj4ht2nwx0001xofnqdo7y8g2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/29/upload-to-github/" data-id="cj4ht2nyv0003xofnxwwxdg6o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -99,19 +99,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/06/29/upload-to-github/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          上传代码到github
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/06/09/express4-x/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/06/29/git-connected-with-github/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">node+express4.x搭建网站基础</div>
+      <div class="article-nav-title">Git 本地仓库与Github远程仓库关联</div>
     </a>
   
 </nav>
