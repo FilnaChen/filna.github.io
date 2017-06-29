@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2017/5 | My Blog</title>
+  <title>git connected with github | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="My Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2017/05/index.html">
+  <meta name="description" content="SSH Key的配置：（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：$ssh-keygen -t rsa -C “注册邮箱”然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容$start ~/.ssh/id_rsa.pub">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git connected with github">
+<meta property="og:url" content="http://yoursite.com/2017/06/29/git-connected-with-github/index.html">
 <meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="SSH Key的配置：（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：$ssh-keygen -t rsa -C “注册邮箱”然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容$start ~/.ssh/id_rsa.pub">
+<meta property="og:updated_time" content="2017-06-29T01:22:14.500Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Blog">
+<meta name="twitter:title" content="git connected with github">
+<meta name="twitter:description" content="SSH Key的配置：（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：$ssh-keygen -t rsa -C “注册邮箱”然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容$start ~/.ssh/id_rsa.pub">
   
     <link rel="alternate" href="/atom.xml" title="My Blog" type="application/atom+xml">
   
@@ -59,58 +63,52 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/31/createBlog/" class="archive-article-date">
-  <time datetime="2017-05-31T10:11:18.000Z" itemprop="datePublished">May 31</time>
+        <section id="main"><article id="post-git-connected-with-github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/29/git-connected-with-github/" class="article-date">
+  <time datetime="2017-06-29T01:21:42.000Z" itemprop="datePublished">2017-06-29</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/31/createBlog/">使用hexo+github创建你的个人博客</a>
+    <h1 class="article-title" itemprop="name">
+      git connected with github
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/30/hello-world/" class="archive-article-date">
-  <time datetime="2017-05-30T07:40:46.113Z" itemprop="datePublished">May 30</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/30/hello-world/">Hello World</a>
-    </h1>
-  
+        <p>SSH Key的配置：<br>（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：<br>$ssh-keygen -t rsa -C “注册邮箱”<br>然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥<br>（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容<br>$start ~/.ssh/id_rsa.pub<br>（3）登录github，打开“SSH Keys”页面，快捷地址：<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a><br>填入key<br>（4）测试ssh key是否成功，使用命令“ssh -T git@github.com”，如果出现“You ‘ve successfully authonticated,bu Github does not provide shell access”，这就表示已经连接上Github</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/29/git-connected-with-github/" data-id="cj4hqw94n00026ofn4392ihc6" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/06/09/express4-x/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">node+express4.x搭建网站基础</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         

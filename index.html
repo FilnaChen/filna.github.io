@@ -61,6 +61,43 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-git-connected-with-github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/29/git-connected-with-github/" class="article-date">
+  <time datetime="2017-06-29T01:21:42.000Z" itemprop="datePublished">2017-06-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/29/git-connected-with-github/">git connected with github</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>SSH Key的配置：<br>（1）Windows下打开Git Bash，创建SSH Key，按提示输入密码，可以不填密码一路回车：<br>$ssh-keygen -t rsa -C “注册邮箱”<br>然后用户主目录/.ssh/下有两个文件，id_rsa是私钥，id_rsa.pub是公钥<br>（2）获取key，打开.ssh下的id_rsa.pub文件，里面的内容就是key的内容<br>$start ~/.ssh/id_rsa.pub<br>（3）登录github，打开“SSH Keys”页面，快捷地址：<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a><br>填入key<br>（4）测试ssh key是否成功，使用命令“ssh -T git@github.com”，如果出现“You ‘ve successfully authonticated,bu Github does not provide shell access”，这就表示已经连接上Github</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/29/git-connected-with-github/" data-id="cj4hqw94n00026ofn4392ihc6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-express4-x" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/06/09/express4-x/" class="article-date">
@@ -88,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/09/express4-x/" data-id="cj4hqs0o40001k8fntdx94gyh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/09/express4-x/" data-id="cj4hqw94b00016ofn65k63q29" class="article-share-link">Share</a>
       
       
     </footer>
@@ -125,7 +162,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/31/createBlog/" data-id="cj4hqs0nf0000k8fnpocccvq8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/31/createBlog/" data-id="cj4hqw93l00006ofnhosawxbm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -170,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/30/hello-world/" data-id="cj4hqs0ol0002k8fnni76kjd7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/30/hello-world/" data-id="cj4hqw94v00036ofnwrfjf1gz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -208,6 +245,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/06/29/git-connected-with-github/">git connected with github</a>
+          </li>
         
           <li>
             <a href="/2017/06/09/express4-x/">node+express4.x搭建网站基础</a>
